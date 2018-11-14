@@ -25,7 +25,8 @@ a{
     max-width: 800px;
     margin-left: 200px;
 }
-@media screen and (max-width: 1000px){
+
+@media screen and (max-device-width: 736px){
     #pitch{
         margin-left: 0px;
         margin-right: 0px;
