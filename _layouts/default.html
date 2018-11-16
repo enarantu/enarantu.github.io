@@ -2,22 +2,30 @@
 <html>
   {% include head.html %}
   <body>
-    <ul class="nav mb-3 mt-5 ml-5" id="pills-tab" role="tablist">
+    <div id="top-bar">
+      <div id="avatar-box">
+        <img src="/public/images/square.jpg" id="avatar">
+        <div id="link-box">
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-github"></a>
+        </div>
+      </div>
+      <div id="message-box">
+        :$ Hi, I am Enkh-a software engineer.<div class="blink_me">&#x25AE;</div>
+      </div>
+    </div>
+
+    <ul class="nav mb-3 mt-3 ml-2" id="pills-tab" role="tablist">
         <li class="nav-item">
           <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Resume</a>
+          <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Algorithms</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+          <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Resume</a>
         </li>
       </ul>
-      <div id="pitch-box">
-        <div id="pitch">
-          Hi, I am Enkh-a back end developer who can do some front end.
-        </div>
-      </div>
       <div class="tab-content w-100" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
           <!--  Thumbnails  -->
@@ -28,8 +36,20 @@
             {% endfor %}
         </div>
         <!-- end of pane -->
-        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">B</div>
-        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">C</div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            {% for item in site.posts %}
+              {% if item.categories contains "about"%}
+                {{item}}
+              {% endif %}
+            {% endfor %}
+        </div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+          {% for item in site.posts %}
+            {% if item.categories contains "resume"%}
+              {{item}}
+            {% endif %}
+          {% endfor %}
+        </div>
       </div>
   </body>
 </html>

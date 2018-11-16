@@ -1,0 +1,121 @@
+a{
+    color: white;
+}
+ a:hover{
+    color: #B82601;
+    /*padding-bottom: 2px;*/
+}
+ul{
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+}
+html{
+    height: 100%;
+    min-width: 600px;
+}
+body{
+    height: 100%;
+    font-family: 'VT323', monospace;
+    background-color: #062F4F;
+    /*font-family: 'Montserrat', sans-serif;*/
+}
+.list-group-flush{
+    margin: 0 auto;
+}
+.nav {
+    font-size: 40px;
+}
+.nav-link.active{
+    border-bottom: 1px solid #FFF;
+    padding-bottom: 2px;
+}
+
+
+#pills-tabContent{
+    margin-bottom: 50px;
+}
+
+.project-thumbnail{
+    height: 150px;
+    width: 100%;
+    border-radius: 5px;
+}
+.project-thumbnail:hover .project-title-box{
+    color: #B82601;
+}
+.project-title-box{
+    /*font-family: 'Permanent Marker', serif;*/
+    font-size: 40px;
+    width: 50%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align:  center;
+    margin: 0 auto;
+    background-color: #062F4F;
+    color: #FFFFFF;
+}
+/*.project-title-box:hover{
+    color: #B82601;
+}*/
+#about-box{
+    width: 750px;
+    margin: 0 auto;
+}
+#skill-box{
+    display: flex;
+    margin-right: 0px;
+    margin-left: 0px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px outset;
+}
+.skill {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.skill-name{
+    font-weight: bold;
+}
+#resume-box{
+    width: 70%;
+    margin: 0 auto;
+}
+#resume{
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+}
+.blink_me {
+    display: inline-block;
+    animation: blinker 1s ease infinite;
+    color: green;
+}
+.modal-dialog{
+    font-family: "Open Sans";
+}
+
+@keyframes blinker {
+  10% {
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 736px){
+    #message{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    #message{
+        width: auto;
+    }
+    #about-box{
+        width: auto;
+    }
+    #skill-box{;
+        display: block;
+    }
+    #resume-box{
+        width: 100%;
+    }
+}
