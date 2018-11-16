@@ -29,26 +29,25 @@
       <div class="tab-content w-100" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
           <!--  Thumbnails  -->
-           {% for item in site.posts %}
-              {% if item.categories contains "project"%}
-                {{item}}
-              {% endif %}
-            {% endfor %}
+          {% assign sorted_pages = site.posts | sort:"pid" %}
+          {% for item in sorted_pages%}
+            {% if item.categories contains "project"%}
+              {{item}}
+            {% endif %}
+          {% endfor %}
         </div>
         <!-- end of pane -->
         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
             {% for item in site.posts %}
-              {% if item.categories contains "about"%}
+              {% if item.categories contains "algorithms"%}
                 {{item}}
               {% endif %}
             {% endfor %}
         </div>
         <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-          {% for item in site.posts %}
-            {% if item.categories contains "resume"%}
-              {{item}}
-            {% endif %}
-          {% endfor %}
+          <div id="resume-box">
+            <img id="resume" src="/public/images/resume.jpg"/>
+          </div>
         </div>
       </div>
   </body>

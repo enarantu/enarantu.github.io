@@ -1,8 +1,0 @@
----
-layout: resume
-categories: resume
-thumbnail: "/public/images/snake.png"
-pid: "post-6"
----
-
-<img id="resume" src="/public/images/resume.jpg"/>
