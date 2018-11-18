@@ -1,0 +1,41 @@
+html{
+    height: 100%;
+    min-width: 736px;
+}
+body{
+    height: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'VT323', monospace;
+    background-color: #0F1626;
+    display: flex;
+    flex-flow: column;
+}
+a:hover{
+    color: #B82601;
+    text-decoration: none;
+}
+.highlight{
+    border-radius: 2px;
+    background-color: white;
+}
+
+#content-box{
+    flex: 1 1 auto;
+    display: flex;
+}
+#hull{
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: row;
+}
+.list-box{
+    font-size: 30px;
+    width: 100%;
+}
+
+.card{
+    background-color: transparent;
+    color: #00FF00 ;
+    border-bottom: 2px solid #00FF00;
+}

@@ -1,29 +1,9 @@
-<style>
-  #tid{{page.pid}}:hover{
-    background: url({{page.thumbnail}});
-  }
-</style>
-
-<!-- Button trigger modal -->
-<div class="project-thumbnail" id="tid{{page.pid}}" data-toggle="modal" data-target=#{{page.pid}}>
-  <div class="project-title-box">
-    {{page.title}}
-  </div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id={{page.pid}} tabindex="-1" role="dialog" aria-labelledby=example{{page.pid}} aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id=example{{page.pid}}>{{page.title}}</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      {{page.content}}
-      </div>
-    </div>
+---
+layout: default
+---
+<div class="post-box">
+  <div class="post">
+    <div class="post-title">{{page.title}}</div>
+    {{content}}
   </div>
 </div>

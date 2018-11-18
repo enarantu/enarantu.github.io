@@ -1,0 +1,20 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+title: Projects
+---
+<div class="list-box">
+        {% assign sorted_pages = site.posts | sort:"pid" %}
+        {% for item in sorted_pages%}
+            {% if item.categories contains "project"%}
+                <div class="card w-100">
+                  <div class="card-body">
+                    <a href={{item.url}} class="card-link">{{item.title}}</a>
+                    <p class="card-text">{{item.description}}</p>
+                  </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+</div>

@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: algorithms  
+categories: problem
 thumbnail: "/public/images/algo.png"
 pid: "post-05"
 ---

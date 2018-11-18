@@ -1,0 +1,35 @@
+#top-bar{
+    position: sticky;
+    background-color: #0F1626;
+    top: 0px;
+    flex: 0 0 60px;
+    width: 100%;
+}
+#message-box{
+    float: left;
+    font-family: 'VT323', monospace;
+    color: #00FF00;
+    font-size: 35px;
+    text-align: left;
+    margin-left: 5px;
+    vertical-align: middle;
+    line-height: 60px;
+}
+#avatar{
+    float: left;
+    height: 50px;
+    margin: 5px;
+    width: auto;
+    border-radius: 50%;
+}
+.blink_me {
+    display: inline-block;
+    animation: blinker 1s ease infinite;
+    color: #00FF66;
+}
+@keyframes blinker {
+  10% {
+    opacity: 0;
+  }
+}
+/*BELOW ARE UNSAFE*/

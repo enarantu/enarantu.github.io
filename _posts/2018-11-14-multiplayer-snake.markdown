@@ -3,23 +3,33 @@ layout: post
 categories: project
 thumbnail: "/public/images/snake.png"
 pid: "post-00"
+description: "Real-time multiplayer classic snake game"
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+<p>
+    This is my personal project to create a real-time web application. I used node.js for the server, react.js for the client, and socket.io for communication. 
+    Deployed it on Digital Ocean, and to showcase got a domain name and certificate for HTTPS.<br/>
+    <img src="/public/images/snake.png" width="100%"/>
+    Try game at: <a href="https://www.multiplayersnakeproject.site" target="blank">https://www.multiplayersnakeproject.site</a> <br/>
+    Browse code at: <a href="https://github.com/enarantu/multiplayer-snake" target="black">https://github.com/enarantu/multiplayer-snake</a>
+</p>
+<p>
+    Technical challenge: When one snake makes a turn letting other 4 playes to know as fast as possible is the key challenge.
+</p>
+<p>
+    State: Locations of snakes, foods, etc.<br/>
+    Timestep: All clients must have same timestep.<br/>
+</p>
+<p>
+    Solution 1: Client sends request at direction change. Next state for client is computed by server at timesteps. Client sends request at timesteps requesting state. Ultimate power on the server prevents cheating.<br/>
+    Problem: On direction change, UI updates after server replies with state. Due to reply latency, game feels choppy.
+</p>
+<p>
+    Solution 2: At timesteps, client computes next state and sends to server. Server sends next state for other clients at timesteps. This approach allows clients to see themselves without delay and see others some time in the past<br/>
+    This is my choice of approach. <br/>
+    Problem: Since ultimate state control is on players, they can cheat.
+</p>
+<p>
+    Solution 3: At timesteps, client and server both computes the next state, but client renders UI with thier version of state without delay. When server version of state and client version of state conflicts, server has the ultimate control. This solution is both realtime and cheat proof.<br/>
+    Problem: This solution is less efficient than previous solution, and added complication will make development time much longer.
+</p>
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
