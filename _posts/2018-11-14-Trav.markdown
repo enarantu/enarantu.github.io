@@ -6,7 +6,12 @@ pid: "post-01"
 description: "Travel route sharing social network"
 ---
 <p>
-    This was my senior year team project.<br/>
-    The Problem: When you travel to a city you don't know which places are worth visiting at what time and in which order.<br/>
-    The Idea: Let users create a route, and let local places put advertisements and pay users if their route is getting a lot of attention.
+    This was my senior year team project and I was responsible for the backend.<br/>
+    The Problem: When you travel to a city, you don't fully know which places to visit in which order and at what time.<br/>
+    A Route: Series of GPS locations that can be traversed by other people in that order. Creators of a route can commentate the route with guidelines and pictures.<br/>
+    The App Idea: Users can create and share route on our application, local places can put adds on routes, and let creators get portion of the ad reventue.<br/>
+    Implementation choices: 
+    <img src="/public/images/trav_org.jpg" width="100%"/>
+    App user interface:
+    <img src="/public/images/trav.png" width="100%"/>
 </p>

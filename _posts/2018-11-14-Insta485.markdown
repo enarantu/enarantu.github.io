@@ -5,4 +5,3 @@ thumbnail: "/public/images/insta485.png"
 pid: "post-02"
 description: "Instagram clone website"
 ---
-
