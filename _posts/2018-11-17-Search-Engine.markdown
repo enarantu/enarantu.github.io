@@ -5,6 +5,7 @@ thumbnail: "/public/images/insta485.png"
 pid: "post-03"
 description: "How google used to work around 2006"
 techs: "Flask, React.js, SQLite, Hadoop, Socket, Multithreading"
+resp: Everything except design(design was done by course staff).
 ---
 Reasons why this project is awesome:<br/>
 1) It is a search engine implemented almost from scratch.

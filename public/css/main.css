@@ -11,6 +11,13 @@ body{
     display: flex;
     flex-flow: column;
 }
+hr {
+    display: block;
+    border: 0;
+    border-top: 5px dashed white;
+    margin: 0;
+    padding: 0; 
+}
 a:hover{
     color: #B82601;
     text-decoration: none;
