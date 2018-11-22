@@ -23,6 +23,9 @@ a:hover{
 #content-box{
     flex: 1 1 auto;
     display: flex;
+    font-size: 30px;
+    color: white;
+    padding-left: 20px;
 }
 #hull{
     display: flex;
@@ -33,9 +36,11 @@ a:hover{
     font-size: 30px;
     width: 100%;
 }
-
 .card{
     background-color: transparent;
     color: #00FF00 ;
     border-bottom: 2px solid #00FF00;
+}
+.card-body{
+    padding: 0px;
 }

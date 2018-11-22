@@ -3,17 +3,15 @@ layout: post
 categories: project
 thumbnail: "/public/images/snake.png"
 pid: "post-00"
-description: "Real-time multiplayer classic snake game"
+techs: Socket.io, Node.js, React.js, Jest, Bootstrap
+description: "Real-time online multiplayer snake"
 ---
 <p>
-    This is my personal project to create a real-time web application. I used node.js for the server, react.js for the client, and socket.io for communication. 
-    Deployed it on Digital Ocean, and to showcase got a domain name and certificate for HTTPS.<br/>
-    <img src="/public/images/snake.png" width="100%"/>
     Try game at: <a href="https://www.multiplayersnakeproject.site" target="blank">https://www.multiplayersnakeproject.site</a> <br/>
     Browse code at: <a href="https://github.com/enarantu/multiplayer-snake" target="black">https://github.com/enarantu/multiplayer-snake</a>
 </p>
 <p>
-    Technical challenge: When one snake makes a turn letting other 4 playes to know as fast as possible is the key challenge.
+    Technical challenge: When one snake makes a turn letting other players to know as fast as possible is the key challenge.
 </p>
 <p>
     State: Locations of snakes, foods, etc.<br/>

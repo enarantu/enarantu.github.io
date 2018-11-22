@@ -4,6 +4,7 @@
 }
 .nav-item{
     font-size: 30px;
+    margin-top: 20px;
 }
 #side-bar-box{
     flex: 0 0 100px;

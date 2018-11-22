@@ -9,12 +9,16 @@
     float: left;
     font-family: 'VT323', monospace;
     color: #00FF00;
-    font-size: 35px;
+    font-size: 40px;
     text-align: left;
     margin-left: 5px;
     vertical-align: middle;
     line-height: 60px;
+    overflow: hidden;
+    white-space: nowrap;
 }
+
+
 #avatar{
     float: left;
     height: 50px;
@@ -23,6 +27,7 @@
     border-radius: 50%;
 }
 .blink_me {
+    font-size: 40px;
     display: inline-block;
     animation: blinker 1s ease infinite;
     color: #00FF66;

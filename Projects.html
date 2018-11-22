@@ -3,18 +3,34 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
-title: Problems
+title: Projects
+order: 3
 ---
 <div class="list-box">
         {% assign sorted_pages = site.posts | sort:"pid" %}
         {% for item in sorted_pages%}
-            {% if item.categories contains "problem"%}
+            {% if item.categories contains "project"%}
                 <div class="card w-100">
                   <div class="card-body">
                     <a href={{item.url}} class="card-link">{{item.title}}</a>
+                    <h6 class="card-subtitle mb-2 text-muted">{{item.techs}}</h6>
                     <p class="card-text">{{item.description}}</p>
                   </div>
                 </div>
             {% endif %}
         {% endfor %}
 </div>
+
+<script>
+    var i = 0;
+    var txt = "$ Some of the things I've worked on.";
+    var speed = 50;
+    function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("message-box").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+    typeWriter()
+</script>

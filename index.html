@@ -3,18 +3,23 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
-title: Projects
+title: About
+order: 1
 ---
-<div class="list-box">
-        {% assign sorted_pages = site.posts | sort:"pid" %}
-        {% for item in sorted_pages%}
-            {% if item.categories contains "project"%}
-                <div class="card w-100">
-                  <div class="card-body">
-                    <a href={{item.url}} class="card-link">{{item.title}}</a>
-                    <p class="card-text">{{item.description}}</p>
-                  </div>
-                </div>
-            {% endif %}
-        {% endfor %}
-</div>
+Languages I code: Python, Javascript, C/C++, HTML/CSS, SQL<br/>
+Things I use:
+Flask, Django, Express.js, Socket.io, React.js, Bootstrap <br/>
+
+<script>
+    var i = 0;
+    var txt = "$ Hi I'm Enk-full stack developer.";
+    var speed = 50;
+    function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("message-box").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+    typeWriter()
+</script>

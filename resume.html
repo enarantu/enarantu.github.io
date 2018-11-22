@@ -1,16 +1,16 @@
 ---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
 layout: default
+title: Resume
+order: 2
 ---
-<div class="post-box">
-  <div class="post">
-    <div class="post-title">{{page.title}}</div>
-    {{content}}
-  </div>
-</div>
+<embed src="/public/resume.pdf" width="100%"/>
 
 <script>
     var i = 0;
-    var txt = "$ {{page.description}}";
+    var txt = "$ My resume";
     var speed = 50;
     function typeWriter() {
         if (i < txt.length) {

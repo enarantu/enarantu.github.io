@@ -4,4 +4,17 @@ categories: project
 thumbnail: "/public/images/insta485.png"
 pid: "post-02"
 description: "Instagram clone website"
+techs: Flask, Jinja, React.js, SQLite
 ---
+Reasons why this project is awesome:<br/>
+1) It is almost instagram.<br/>
+Proper authentication(with hashing, salting of passwords, and use of session cookies).<br/>
+Creating and deleting accounts. <br/>
+Following, unfollowing, and exploration of friends. <br/>
+Upload images to make posts, and delete posts. <br/>
+Like, unlike, comment, uncomment posts. <br/>
+2) Painless to set it up.<br/>
+Making heavy use of bash scripts and python virtual enviroment allowed setting uniform environtment among developers quite simple.
+3) Readable code. <br/>
+Usage of pydocstyle, pycodestyle, and eslinter forced beautiful code.
+<img src="/public/images/insta485.png" width="100%"/>
