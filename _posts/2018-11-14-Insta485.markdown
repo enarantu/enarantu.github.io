@@ -7,6 +7,8 @@ description: "Instagram clone website"
 techs: Flask, Jinja, React.js, Webpack, SQLite
 resp: Everything except design(design was done by course staff).
 ---
+Code available upon request.
+<hr>
 It is almost instagram, you can create profile, login, logout, upload pictures, see newseed, follow, comment, and like.
 <hr>
 <img src="/public/images/insta485.png" width="100%"/>

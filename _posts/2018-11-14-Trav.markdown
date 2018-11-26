@@ -7,15 +7,15 @@ techs: Django, PostgreSQL, Swift, 3rd Party APIs, Firebase Authentication
 description: "Travel route sharing social network"
 resp: API's created with Django, database design on PostgeSQL, 3rd party authentication through firebase, deployment on Digital Ocean, and testing.
 ---
-<p>
-    The Problem: When you travel to a city, you don't fully know which places to visit in which order and at what time.
-    <hr>
-    A Route: Series of GPS locations that can be traversed by other people in that order. Creators of a route can commentate the route with guidelines and pictures.
-    <hr>
-    The App Idea: Let users create and share routes publicly or privately to their followers on our application, let local places put ads on routes, and then let creators get portion of the ad reventue.<br/>
-    <hr>
-    Implementation choices:<br/>
-    <img src="/public/images/trav_org.jpg" width="100%"/>
-    App user interface:
-    <img src="/public/images/trav.png" width="100%"/>
-</p>
+Code available upon request.
+<hr>
+The Problem: When you travel to a city, you don't fully know which places to visit in which order and at what time.
+<hr>
+A Route: Series of GPS locations that can be traversed by other people in that order. Creators of a route can commentate the route with guidelines and pictures.
+<hr>
+The App Idea: Let users create and share routes publicly or privately to their followers on our application, let local places put ads on routes, and then let creators get portion of the ad reventue.<br/>
+<hr>
+Implementation choices:<br/>
+<img src="/public/images/trav_org.jpg" width="100%"/>
+App user interface:
+<img src="/public/images/trav.png" width="100%"/>
